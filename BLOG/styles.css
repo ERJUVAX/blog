@@ -1,0 +1,212 @@
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #0d0d0d;
+    color: #d4d4d4;
+    line-height: 1.6;
+  }
+  .neon-logo {
+    width: 100px;
+    height: auto;
+    animation: neonPulse 1.5s infinite alternate;
+  }
+  #particles-js {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  #logo {
+    position: absolute;   /* Usamos position absoluta para fijar el logo en un lugar específico */
+    top: 10px;            /* Distancia desde la parte superior de la página */
+    right: 10px;          /* Distancia desde el borde derecho de la página */
+    width: 100px;         /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;         /* Mantiene la proporción del logo */
+  }
+  
+  
+  @keyframes neonPulse {
+    0% {
+      text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff00ff, 0 0 40px #ff00ff, 0 0 80px #ff00ff, 0 0 90px #ff00ff, 0 0 100px #ff00ff;
+      transform: scale(1);
+    }
+    100% {
+      text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 50px #ff00ff, 0 0 70px #ff00ff, 0 0 100px #ff00ff, 0 0 120px #ff00ff, 0 0 150px #ff00ff;
+      transform: scale(1.1);
+    }
+  }
+  
+  /* Encabezado estilo neon */
+  .neon-header {
+    background: linear-gradient(145deg, #abd904, #93f500, #ffae00);
+    padding: 1rem 2rem;
+    text-align: center;
+    color: #0d0d0d;
+    text-shadow: 0 0 5px #f5d300, 0 0 10px #ffae00;
+  }
+  
+  
+  .glitch-text {
+    font-size: 3rem;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff00ff, 0 0 10px #ff00ff, 0 0 20px #ff007f;
+    animation: glitch 1s infinite;
+  }
+  
+  @keyframes glitch {
+    0% { text-shadow: -1px 1px cyan; }
+    50% { text-shadow: 2px -2px magenta; }
+    100% { text-shadow: -1px 1px cyan; }
+  }
+  
+  .nav-bar ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: rgb(5, 7, 0);
+  }
+  
+  .nav-bar a {
+    color: cyan;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+  }
+  
+  .nav-bar a:hover {
+    color: magenta;
+    text-shadow: 0 0 5px cyan;
+  }
+  .neon-button {
+    background: linear-gradient(145deg, #c5fa05, #ffae00);
+    border: none;
+    color: black;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 10px #f5d300, 0 0 40px #ffae00;
+    transition: all 0.3s ease;
+  }
+  
+  .neon-button:hover {
+    box-shadow: 0 0 20px #ffae00, 0 0 60px #f5d300;
+  }
+  
+  #tsparticles {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background: linear-gradient(145deg, #020024, #090979, #00d4ff);
+  }
+  
+  
+  /* Hero Section */
+  .hero {
+    text-align: center;
+    padding: 2rem;
+    background: linear-gradient(145deg, #020024, #090979, #00d4ff);
+    color: white;
+  }
+  
+  /* Post Cards */
+  .post-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+    padding: 2rem;
+  }
+  
+  .post-card {
+    background: rgba(255, 0, 128, 0.1);
+    padding: 1rem;
+    border: 1px solid #ff00ff;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+    transition: transform 0.3s;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .post-card a {
+    color: cyan;
+    text-decoration: underline;
+  }
+  
+  .neon-footer {
+    background-color: #1a1a1a;
+    text-align: center;
+    padding: 1rem;
+    color: cyan;
+  }
+  /* Estilos para el footer */
+.cyberpunk-footer {
+    background-color: #1a1a1a;
+    color: #00ffff;
+    padding: 40px 20px;
+    font-family: 'Orbitron', sans-serif;
+    border-top: 2px solid #ff00ff;
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    margin: 20px;
+  }
+  
+  .footer-section h4 {
+    color: #ff00ff;
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-section ul li a {
+    color: #00ffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #ff00ff;
+  }
+  
+  .footer-section p {
+    margin: 5px 0;
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+    font-size: 0.9em;
+  }
