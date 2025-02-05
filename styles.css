@@ -25,13 +25,22 @@
     z-index: -1;
   }
   
-  #logo {
-    position: absolute;   /* Usamos position absoluta para fijar el logo en un lugar específico */
-    top: 10px;            /* Distancia desde la parte superior de la página */
-    right: 10px;          /* Distancia desde el borde derecho de la página */
-    width: 50px;         /* Ajusta el tamaño del logo según sea necesario */
-    height: auto;         /* Mantiene la proporción del logo */
-  }
+logo {
+
+    position: relative; /* Utilizamos position relative para permitir una mejor integración en el flujo del diseño */
+    max-width: 100px; /* Limitar el ancho para pantallas pequeñas */
+    height: auto; /* Mantener la proporción del logo */
+    margin: 0 auto; /* Centrar el logo en su contenedor */
+    display: block; /* Asegurar que el logo sea un elemento bloque */
+}
+
+@media (max-width: 600px) {
+logo {
+        width: 40px; /* Ajuste del tamaño del logo para pantallas más pequeñas */
+    }
+}
+
+
   
   
   @keyframes neonPulse {
