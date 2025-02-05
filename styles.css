@@ -34,7 +34,7 @@ logo {
     display: block; /* Asegurar que el logo sea un elemento bloque */
 }
 
-@media (max-width: 600px) {
+@media (max-width: 60px) {
 logo {
         width: 40px; /* Ajuste del tamaño del logo para pantallas más pequeñas */
         height: 40px;
