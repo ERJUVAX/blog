@@ -12,7 +12,7 @@
     line-height: 1.6;
   }
   .neon-logo {
-    width: 100px;
+    width: 50px;
     height: auto;
     animation: neonPulse 1.5s infinite alternate;
   }
@@ -29,7 +29,7 @@
     position: absolute;   /* Usamos position absoluta para fijar el logo en un lugar específico */
     top: 10px;            /* Distancia desde la parte superior de la página */
     right: 10px;          /* Distancia desde el borde derecho de la página */
-    width: 100px;         /* Ajusta el tamaño del logo según sea necesario */
+    width: 50px;         /* Ajusta el tamaño del logo según sea necesario */
     height: auto;         /* Mantiene la proporción del logo */
   }
   
