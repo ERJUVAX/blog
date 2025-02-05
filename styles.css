@@ -37,6 +37,7 @@ logo {
 @media (max-width: 600px) {
 logo {
         width: 40px; /* Ajuste del tamaño del logo para pantallas más pequeñas */
+        height: 40px;
     }
 }
 
