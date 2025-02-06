@@ -25,20 +25,22 @@
     z-index: -1;
   }
   
-logo {
-position: relative;
-width: 80px;
-max-width: 80px;
-height: 80px;
-margin: 0;
-display: inline-block;
+#logo {
+    position: relative;
+    width: 100%;
+    max-width: 5vw; /* Utiliza un valor relativo para ajustar el tamaño según el ancho de la pantalla */
+    height: auto;
+    margin: 0;
+    display: inline-block;
 }
 
 @media (max-width: 600px) {
-logo {
-max-width: 50px;
+    #logo {
+        max-width: 15vw; /* Asegura que el logo tenga un tamaño adecuado en pantallas más pequeñas */
+    }
 }
-}
+
+
 
 
 
