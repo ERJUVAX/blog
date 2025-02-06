@@ -25,13 +25,8 @@
     z-index: -1;
   }
   
-logo {
-
-    position: relative; /* Utilizamos position relative para permitir una mejor integración en el flujo del diseño */
-    max-width: 40px; /* Limitar el ancho para pantallas pequeñas */
-    height: 40px; /* Mantener la proporción del logo */
-    margin: 0 ; /* Centrar el logo en su contenedor */
-    /*display: block;  Asegurar que el logo sea un elemento bloque */
+header .logo img {
+    width: 50px;
 }
 
 @media (max-width: 40px) {
