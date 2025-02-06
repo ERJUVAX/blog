@@ -25,16 +25,22 @@
     z-index: -1;
   }
   
-header .logo img {
-    width: 50px;
+logo {
+position: relative;
+width: 100%;
+max-width: 40px;
+height: auto;
+margin: 0;
+display: inline-block;
 }
 
-@media (max-width: 40px) {
-logo {
-        width: 20px; /* Ajuste del tamaño del logo para pantallas más pequeñas */
-        height: 20px;
-    }
+@media (max-width: 600px) {
+#logo {
+max-width: 20px;
 }
+}
+
+
 
 
   
