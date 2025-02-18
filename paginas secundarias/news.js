@@ -31,26 +31,23 @@ async function obtenerNoticias() {
 }
 
 // Llamar a la función al cargar la página
-document.addEventListener('DOMContentLoaded', obtenerNoticias);
-
-document.addEventListener("DOMContentLoaded", () => {
-    const noticiasContainer = document.getElementById("noticias-container");
-
+document.addEventListener('DOMContentLoaded', () => {
+    // Asegurarse de que el contenedor de noticias exista
     if (noticiasContainer) {
-        noticiasContainer.style.overflowY = "auto"; 
+        // Aplicar estilo de desplazamiento
+        noticiasContainer.style.overflowY = "auto";
         noticiasContainer.style.maxHeight = "400px"; 
+
+        // Llamar a la función para obtener noticias
+        obtenerNoticias();
+
+        // Si es necesario simular algunas noticias para la prueba
+        // Eliminar el bloque de prueba cuando las noticias reales se carguen
+        for (let i = 1; i <= 10; i++) {
+            let noticia = document.createElement("div");
+            noticia.classList.add("noticia");
+            noticia.innerHTML = `<h3>Noticia ${i}</h3><p>Este es un texto de prueba para ver si el scroll funciona correctamente.</p>`;
+            noticiasContainer.appendChild(noticia);
+        }
     }
 });
-
-document.addEventListener("DOMContentLoaded", () => {
-    const noticiasContainer = document.getElementById("noticias-container");
-
-    // Simulación de noticias largas para probar el scroll
-    for (let i = 1; i <= 10; i++) {
-        let noticia = document.createElement("div");
-        noticia.classList.add("noticia");
-        noticia.innerHTML = `<h3>Noticia ${i}</h3><p>Este es un texto de prueba para ver si el scroll funciona correctamente.</p>`;
-        noticiasContainer.appendChild(noticia);
-    }
-});
-
