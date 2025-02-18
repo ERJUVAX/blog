@@ -25,13 +25,29 @@
     z-index: -1;
   }
   
-  #logo {
-    position: absolute;   /* Usamos position absoluta para fijar el logo en un lugar específico */
-    top: 10px;            /* Distancia desde la parte superior de la página */
-    right: 10px;          /* Distancia desde el borde derecho de la página */
-    width: 80px;         /* Ajusta el tamaño del logo según sea necesario */
-    height: auto;         /* Mantiene la proporción del logo */
-  }
+  .contenedor {
+    display: flex;
+    flex-direction: column;   /* Coloca los elementos en una columna */
+    justify-content: center;  /* Centra los elementos verticalmente */
+    align-items: center;      /* Centra los elementos horizontalmente */
+    height: 100vh;            /* Toma el alto de la ventana */
+}
+
+#logo {
+    width: 80px;              /* Ajusta el tamaño del logo */
+    height: auto;
+    margin-bottom: 20px;      /* Espacio entre el logo y el botón */
+}
+
+#audio-btn {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
   
   
   @keyframes neonPulse {
