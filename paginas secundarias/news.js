@@ -6,7 +6,8 @@ async function obtenerNoticias() {
         const response = await fetch(`https://newsapi.org/v2/everything?q=videojuegos&language=es&apiKey=${apiKey}`);
         const data = await response.json();
 
-        if (data.articles.length > 0) {
+        // Verificamos si la respuesta es válida y tiene artículos
+        if (data && data.articles && data.articles.length > 0) {
             noticiasContainer.innerHTML = ''; // Limpiar antes de agregar nuevas noticias
 
             data.articles.slice(0, 5).forEach(noticia => { // Muestra solo 5 noticias
@@ -31,23 +32,4 @@ async function obtenerNoticias() {
 }
 
 // Llamar a la función al cargar la página
-document.addEventListener('DOMContentLoaded', () => {
-    // Asegurarse de que el contenedor de noticias exista
-    if (noticiasContainer) {
-        // Aplicar estilo de desplazamiento
-        noticiasContainer.style.overflowY = "auto";
-        noticiasContainer.style.maxHeight = "400px"; 
-
-        // Llamar a la función para obtener noticias
-        obtenerNoticias();
-
-        // Si es necesario simular algunas noticias para la prueba
-        // Eliminar el bloque de prueba cuando las noticias reales se carguen
-        for (let i = 1; i <= 10; i++) {
-            let noticia = document.createElement("div");
-            noticia.classList.add("noticia");
-            noticia.innerHTML = `<h3>Noticia ${i}</h3><p>Este es un texto de prueba para ver si el scroll funciona correctamente.</p>`;
-            noticiasContainer.appendChild(noticia);
-        }
-    }
-});
+document.addEventListener('DOMContentLoaded', obtenerNoticias);
