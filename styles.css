@@ -25,29 +25,13 @@
     z-index: -1;
   }
   
-  .contenedor {
-    display: flex;
-    flex-direction: column;   /* Coloca los elementos en una columna */
-    justify-content: center;  /* Centra los elementos verticalmente */
-    align-items: center;      /* Centra los elementos horizontalmente */
-    height: 100vh;            /* Toma el alto de la ventana */
-}
-
-#logo {
-    width: 80px;              /* Ajusta el tamaño del logo */
-    height: auto;
-    margin-bottom: 20px;      /* Espacio entre el logo y el botón */
-}
-
-#audio-btn {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
+  #logo {
+    position: absolute;   /* Usamos position absoluta para fijar el logo en un lugar específico */
+    top: 10px;            /* Distancia desde la parte superior de la página */
+    right: 10px;          /* Distancia desde el borde derecho de la página */
+    width: 80px;         /* Ajusta el tamaño del logo según sea necesario */
+    height: auto;         /* Mantiene la proporción del logo */
+  }
   
   
   @keyframes neonPulse {
@@ -63,10 +47,10 @@
   
   /* Encabezado estilo neon */
   .neon-header {
-    background: linear-gradient(145deg, #abd904, #93f500, #ffae00);
+    background: rgba(30, 1, 36, 0.8);
     padding: 1rem 2rem;
     text-align: center;
-    color: #0d0d0d;
+    color: #07e9f1;
     text-shadow: 0 0 5px #f5d300, 0 0 10px #ffae00;
   }
   
@@ -171,7 +155,7 @@
   }
   /* Estilos para el footer */
 .cyberpunk-footer {
-    background-color: #1a1a1a5c;
+    background-color: rgba(30, 1, 36, 0.308);
     color: #00ffff;
     padding: 40px 20px;
     font-family: 'Orbitron', sans-serif;
@@ -223,45 +207,16 @@
     text-align: center;
     margin-top: 20px;
     padding-top: 10px;
-    border-top: 1px solid #444;
+    border-top: 1px solid #bc0808a9;
     font-size: 0.9em;
   }
-/*seccion de proyects*/
-.projects-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Ocupa toda la pantalla */
-  background: url('https://erjuvax.github.io/blog/images/fondo.jpg') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-}
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.7);
-}
 /*seccion news*/
 .news-section {
   position: relative;
   width: 100%;
   height: 100vh; /* Ocupa toda la pantalla */
-  background: url('https://erjuvax.github.io/blog/images/fondo.jpg') no-repeat center center/cover;
+  background: url('../Images/fondo.jpg') no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -275,128 +230,16 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
+  background: rgba(122, 120, 120, 0.244); /* Oscurece el fondo */
 }
 
 .content {
   position: relative;
   z-index: 1;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(112, 5, 148, 0.482);
   border-radius: 10px;
   box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.7);
 }
-/*seccion games*/
-.games-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Ocupa toda la pantalla */
-  background: url('https://erjuvax.github.io/blog/images/fondo.jpg') no-repeat center center/cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-}
 
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Oscurece el fondo */
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.7);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.7);
-}
-/*seccion gallery*/
-.gallery-section {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Ocupa toda la pantalla */
-  background-image: url('https://erjuvax.github.io/blog/images/fondo.jpg');
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  font-family: 'Orbitron', sans-serif;
-  font-size: 1.5rem;
-}
-
-.overlay {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.183); /* Oscurece el fondo */
-}
-
-.content {
-  position: relative;
-  z-index: 1;
-  padding: 20px;
-  background: rgba(0, 0, 0, 0.159);
-  border-radius: 10px;
-  box-shadow: 0px 0px 10px rgba(255, 0, 255, 0.7);
-}
-.noticia {
-  background: #222;
-  color: #06f1f5;
-  padding: 10px;
-  margin: 10px 0;
-  border-radius: 5px;
-}
-/*seccion de noticias*/
-#noticias-container {
-  max-height: 400px; /* Ajusta la altura */
-  overflow-y: scroll; /* Asegura que la barra esté visible */
-  scrollbar-width: thin;
-  scrollbar-color: white rgba(86, 159, 2, 0.371);
-  padding: 10px;
-  background: rgba(30, 1, 36, 0.8); /* Color purple */
-  border-radius: 5px;
-  position: relative;
-  top: -10px; /* Sube el contenedor */
-  width: 90%;
-  max-width: 700px;
-  position: relative; /* Asegura que no esté cubierto por otros elementos */
-  z-index: 10; /* Asegura que esté por encima de otros elementos */
-}
-
-/* Personalización para navegadores como Opera GX */
-#noticias-container::-webkit-scrollbar {
-  width: 8px;
-}
-
-#noticias-container::-webkit-scrollbar-thumb {
-  background-color: white;
-  border-radius: 4px;
-}
-
-/* Asegurar que el scroll funcione en dispositivos táctiles */
-#noticias-container {
-  -webkit-overflow-scrolling: touch;
-  touch-action: auto;
-}
-
-
-.noticia {
-  display: block;
-  padding: 15px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
-  min-height: 100px; /* Asegura que cada noticia tenga suficiente espacio */
-}
-
-
-.noticia:last-child {
-  border-bottom: none;
-}
 
