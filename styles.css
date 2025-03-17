@@ -26,12 +26,14 @@
   }
   
   #logo {
-    position: absolute;   /* Usamos position absoluta para fijar el logo en un lugar específico */
-    top: 10px;            /* Distancia desde la parte superior de la página */
-    right: 10px;          /* Distancia desde el borde derecho de la página */
-    width: 80px;         /* Ajusta el tamaño del logo según sea necesario */
-    height: auto;         /* Mantiene la proporción del logo */
-  }
+    position: fixed;   /* Fija el logo en la pantalla incluso si se hace scroll */
+    top: 10px;         /* Distancia desde la parte superior */
+    left: 10px;        /* Distancia desde la parte izquierda (ajusta según necesidad) */
+    width: 80px;       /* Tamaño del logo */
+    height: auto;      /* Mantiene la proporción */
+    z-index: 9999;     /* Asegura que el logo esté por encima de otros elementos */
+}
+
   
   
   @keyframes neonPulse {
